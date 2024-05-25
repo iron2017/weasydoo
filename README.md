@@ -1,24 +1,28 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 ## Getting Started
-Product Management App
-This is a Next.js application that allows users to manage products. It provides the following features:
+# Product Management App
 
-Authentication
-Login Page (/login): Users can log in with a hardcoded username and password (username: admin, password: password). Upon successful login, the user is redirected to the /dashboard route.
-Product Listing
-Product List (/products): Displays a list of products fetched from an external API (https://fakestoreapi.com/products). Each product item shows the product title, price, category, and an image.
-Product Details
-Product Details Page (/products/[id]): Shows detailed information about a specific product, including its title, price, category, description, image, and rating.
-Create Product
-Create Product Page (/products/create-product): Allows authenticated users to create a new product by providing the title, price, category, description, and image URL. Upon successful creation, the user is redirected to the /products route.
-Update Product
-Update Product Page (/products/update-product/[id]): Allows authenticated users to update an existing product by providing the new title, price, category, description, and image URL.
-Components
-ProductList: A reusable component that displays a list of products. It receives an array of products as a prop and renders them as a list.
-Data Models
-Product Interface
-The Product interface defines the structure of a product object with the following properties:
+This is a Next.js application that allows users to manage products.
 
+## Features
+
+- **Authentication**: Users can log in with a hardcoded username and password (username: `admin`, password: `password`). Upon successful login, the user is redirected to the `/dashboard` route.
+- **Product Listing**: Displays a list of products fetched from an external API (`https://fakestoreapi.com/products`). Each product item shows the product title, price, category, and an image.
+- **Product Details**: Shows detailed information about a specific product, including its title, price, category, description, image, and rating.
+- **Create Product**: Allows authenticated users to create a new product by providing the title, price, category, description, and image URL. Upon successful creation, the user is redirected to the `/products` route.
+- **Update Product**: Allows authenticated users to update an existing product by providing the new title, price, category, description, and image URL.
+
+## Components
+
+- **`ProductList`**: A reusable component that displays a list of products. It receives an array of products as a prop and renders them as a list.
+
+## Data Models
+
+### `Product` Interface
+
+The `Product` interface defines the structure of a product object with the following properties:
+
+```typescript
 interface Product {
   id: number;
   title: string;
@@ -52,7 +56,7 @@ Clone the repository.
 Install dependencies by running npm install or yarn install.
 Start the development server with npm run dev or yarn dev.
 Open http://localhost:3000 in your browser to see the app.
-First, run the development server:
+```
 
 ```bash
 npm run dev
